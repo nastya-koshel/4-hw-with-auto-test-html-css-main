@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0px auto;
+    max-width: 1180px; /* ⚠️ ОБРАТИ ВНИМАНИЕ - максимальная ширина увеличилась на размер отступов, чтобы ширина контента оставалась корректной */
+    /* 📍 Свойство для внутрених отступов */
+}
+
+body {
+    font-family: "Inter", sans-serif; 
+    color: #303030;
+    /* 📍 Минимальная ширина */ 
+}
+
+header {
+    background-color: #2965F1;
+    padding: 23px 0;
+}
+
+header span {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.main-section {
+    background-color: #fafaff;
+    padding: 60px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-section .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.text-wrapper {
+    max-width: 420px;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.main-image {
+    max-width: 715px;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.about-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+select {
+    border: 1px solid rgba(48, 48, 48, 0.3);
+    border-radius: 5px;
+    width: 150px;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    appearance: none; 
+    background-image: url("./ep_arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+}
+
+select:hover,
+.text-field:hover {
+    border-color: #2965f1;
+}
+
+.info-wrapper {
+    display: flex;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.frameworks,
+.books {
+    min-width: 50%;
+}
+
+.frameworks-list,
+.books-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.frameworks-list {
+    font-weight: 400;
+    font-size: 16px;
+    list-style-image: url(./solar_map-arrow-up-bold.svg);
+    padding-left: 20px;
+}
+
+.skills-block {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.books-list {
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+form {
+    margin-bottom: 40px;
+    /* 📍 Свойства для расположения элементов (инпута и кнопки) и отступа между ними */
+}
+
+.text-field {
+    border: 1px solid rgba(48, 48, 48, 0.3);
+    border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    min-width: 125px; /* ⚠️ ОБРАТИ ВНИМАНИЕ - ширину изменили на минимальную ширину, чтобы ширина кнопки не умньшалась при изменении размера окна браузера */
+    height: 36px;
+    background-color: #2965f1;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgba(41, 101, 241, 0.9);
+    cursor: pointer;
+}
+
+.line {
+    margin: 60px 0;
+}
+
+table {
+    border: 1px solid #95a1bb;
+    border-collapse: collapse;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+footer {
+    background-color: rgba(163, 167, 255, 0.3);
+    padding: 26px 0;
+    text-align: center;
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2965f1;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Стили для адаптива под планшеты */
+@media screen and (max-width: 1200px) {
+    .main-section {
+        /* 📍 Свойства для установки минимальной высоты секции по размеру контента и нижнего внутреннего отступа */
+    }
+
+    .main-section .wrapper {
+        /* 📍 Свойства для расположения элементов и отступа между ними */
+    }
+
+    .main-image {
+        /* 📍 Максимальная ширина для главного изображения в % */
+    }
+
+    .text-wrapper {
+        /* 📍 Максимальная ширина для блока с текстом */
+    }
+
+    .about-section {
+    /* 📍 Внутренний отступ сверху и снизу */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-wrapper {
+        /* 📍 Свойства для расположения 2-x списков и отступа между ними */
+    }
+}
+
+/* Стили для адаптива под мобильные устройства */
+@media screen and (max-width: 576px) {
+    .main-section {
+        /* 📍 Внутренние отступы сверху и снизу */
+    }
+
+    .main-section .wrapper {
+        /* 📍 Отступ между изображением и блоком с текстом */
+    }
+
+    .main-title {
+        /* 📍 Размер шрифта */
+    }
+
+    .about-section .wrapper,
+    .info-wrapper {
+        /* 📍 Отступ между изображением и блоком с текстом */
+    }
+}
